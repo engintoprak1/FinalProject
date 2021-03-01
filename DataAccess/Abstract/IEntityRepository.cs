@@ -8,7 +8,7 @@ namespace DataAccess.Abstract
 {
     //generic constraint - generic kısıt
     //class : referans tip olabilir demek
-    //IEntity : IEntity olabilir veya IEntity implemente nesne olabilir.
+    //IEntity : IEntity olabilir veya IEntity implemente etmiş nesne olabilir.
     //new() : new'lenebilir olmalı
     //interfaceler newlenemez
     public interface IEntityRepository<T> where T:class,IEntity,new()
