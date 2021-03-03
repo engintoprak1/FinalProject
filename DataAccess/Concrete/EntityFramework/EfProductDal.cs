@@ -21,7 +21,6 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from p in context.Products
                              join c in context.Categories
                              on p.CategoryId equals c.CategoryId
-                             orderby p.ProductName
                              select new ProductDetailDto
                              {
                                  ProductId = p.ProductId, ProductName = p.ProductName, CategoryName = c.CategoryName,
